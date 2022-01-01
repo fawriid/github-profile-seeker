@@ -18,8 +18,10 @@ function getUser(data) {
         `;
     } else {
         card.innerHTML = `
-        <div class="img__wrapper">
-                    <img src="${data.avatar_url}" alt="${data.login}picture">
+                <div class="img__wrapper">
+                    <a href="${data.avatar_url}" target="_blank">
+                        <img src="${data.avatar_url}" alt="${data.login}picture">
+                    </a>
                 </div>
                 <div class="info__wrapper" id="info--wrapper">
                     <h3>${data.login}</h3>
