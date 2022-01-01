@@ -107,6 +107,12 @@ body {
     justify-content: space-between;
     align-items: center;
 }
+.social > p{
+    margin: 0 1rem;
+}
+.social p:first-child{
+    margin-left: 0;
+}
 
 .repos__ul {
     margin-top: 2rem;
