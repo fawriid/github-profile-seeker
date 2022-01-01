@@ -51,11 +51,11 @@ body {
 .card__wrapper {
     max-width: 900px;
     min-width: 700px;
-    min-height: 300px;
+    min-height: 200px;
     margin: 1rem 0;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     background: #c9d6ff; /* fallback for old browsers */
     background: -webkit-linear-gradient(
         to right,
@@ -91,6 +91,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: auto;
     /* align-items: center; */
 }
 .info__wrapper span {
@@ -105,4 +106,68 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.repos__ul {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+.repos__ul li {
+    background-color: #242344;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    color: white;
+    margin: 0.2rem 0.5rem;
+}
+.repos__ul a {
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: #fff;
+}
+.repos__ul.toggle {
+    display: none;
+}
+#repos {
+    animation: boom 3s infinite;
+    filter: none;
+    -webkit-filter: blur(0);
+    -moz-filter: blur(0);
+    -ms-filter: blur(0);
+    filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0');
+}
+@keyframes boom {
+    0% {
+        transform: scale(1);
+        filter: none;
+        -webkit-filter: blur(0);
+        -moz-filter: blur(0);
+        -ms-filter: blur(0);
+        /* filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0'); */
+    }
+    30% {
+        transform: scale(1);
+        filter: none;
+        -webkit-filter: blur(0);
+        -moz-filter: blur(0);
+        -ms-filter: blur(0);
+        /* filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0'); */
+    }
+    75% {
+        transform: scale(1.02);
+        filter: none;
+        -webkit-filter: blur(0);
+        -moz-filter: blur(0);
+        -ms-filter: blur(0);
+        /* filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0'); */
+    }
+    100% {
+        transform: scale(1);
+        filter: none;
+        -webkit-filter: blur(0);
+        -moz-filter: blur(0);
+        -ms-filter: blur(0);
+        /* filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius='0'); */
+    }
 }
