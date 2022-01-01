@@ -79,6 +79,7 @@ body {
     border: 10px solid #2a2a72;
     border-radius: 50%;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
 }
 .img__wrapper img {
     max-width: 100%;
