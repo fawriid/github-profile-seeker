@@ -50,6 +50,8 @@ body {
 }
 .card__wrapper {
     max-width: 900px;
+    min-width: 700px;
+    min-height: 300px;
     margin: 1rem 0;
     display: flex;
     justify-content: center;
