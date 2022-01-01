@@ -45,6 +45,18 @@ body {
     color: white;
     font-size: 2rem;
 }
+#search::placeholder {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    margin: 0 1rem;
+    /* color: white; */
+    font-size: 2rem;
+}
+#search::-webkit-search-cancel-button {
+    font-size: 2rem;
+    cursor: pointer;
+}
 #search__form button {
     cursor: pointer;
 }
@@ -107,10 +119,10 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-.social > p{
+.social > p {
     margin: 0 1rem;
 }
-.social p:first-child{
+.social p:first-child {
     margin-left: 0;
 }
 
