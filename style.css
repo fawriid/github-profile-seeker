@@ -150,6 +150,9 @@ body {
 #repos {
     animation: boom 3s infinite;
     filter: none;
+    background-color: #9e9ee08a;
+    padding: 5px;
+    border-radius: 5px;
     -webkit-filter: blur(0);
     -moz-filter: blur(0);
     -ms-filter: blur(0);
